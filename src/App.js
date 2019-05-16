@@ -14,9 +14,7 @@ function withState(Component) {
   return function withStateHOC(props) {
     const [count] = React.useState(0);
     return (
-      <>
-        <Component {...props} count={count}/>
-      </>
+      <Component {...props} count={count}/>
     );
   }
 }
